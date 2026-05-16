@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lead Management</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+
+                <h2>Vortex CRM</h2>
+
+                <p>Lead Management</p>
+
+            </div>
+
+            <div class="menu">
+
+                <a href="index.html">
+                    Dashboard
+                </a>
+
+                <a href="leads.html"
+                   class="active">
+                   Leads
+                </a>
+
+                <a href="analytics.html">
+                    Analytics
+                </a>
+
+                <a href="reports.html">
+                    Reports
+                </a>
+
+                <a href="settings.html">
+                    Settings
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Lead Management System
+                </h1>
+
+                <p>
+                    Manage and track all client leads.
+                </p>
+
+            </div>
+
+        </header>
+
+        <div class="table-card">
+
+            <div class="table-header">
+
+                <h3>Recent Leads</h3>
+
+                <button>
+                    Add Lead
+                </button>
+
+            </div>
+
+            <div class="table-controls">
+
+                <input type="text"
+                       placeholder="Search leads...">
+
+                <select>
+
+                    <option>All</option>
+
+                    <option>Converted</option>
+
+                    <option>Pending</option>
+
+                    <option>Lost</option>
+
+                </select>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Status</th>
+                        <th>Revenue</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="leadTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

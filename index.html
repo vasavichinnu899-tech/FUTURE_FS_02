@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Vortex CRM Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="bg1"></div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+
+                <h2>Vortex CRM</h2>
+
+                <p>AI Powered Analytics</p>
+
+            </div>
+
+            <div class="menu">
+
+                <a href="index.html"
+                   class="active">
+                    Dashboard
+                </a>
+
+                <a href="leads.html">
+                    Leads
+                </a>
+
+                <a href="analytics.html">
+                    Analytics
+                </a>
+
+                <a href="reports.html">
+                    Reports
+                </a>
+
+                <a href="settings.html">
+                    Settings
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="premium-card">
+
+            <h3>PREDICTION</h3>
+
+            <p>
+                Lead conversion expected
+                to rise by 18% next month.
+            </p>
+
+            <button>
+                Generate Report
+            </button>
+
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Welcome Back, Sales Manager
+                </h1>
+
+                <p>
+                    Your sales performance
+                    increased this month.
+                </p>
+
+            </div>
+
+            <div class="top-right">
+
+                <input type="text"
+                       placeholder="Search clients...">
+
+                <div class="profile">
+                    V
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="hero">
+
+            <div class="hero-left">
+
+                <h2>
+                    AI Lead Intelligence Overview
+                </h2>
+
+                <p>
+                    Monitor conversions,
+                    revenue, engagement
+                    and sales pipeline analytics
+                    in real time.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn">
+                        Generate AI Report
+                    </button>
+
+                    <button class="secondary-btn">
+                        Export Data
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <div class="orb orb1"></div>
+
+                <div class="orb orb2"></div>
+
+            </div>
+
+        </section>
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <span>Total Leads</span>
+
+                <h2 id="totalLeads">
+                    0
+                </h2>
+
+                <small>
+                    +18% Growth
+                </small>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span>Converted</span>
+
+                <h2 id="convertedLeads">
+                    0
+                </h2>
+
+                <small>
+                    +12% Increase
+                </small>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span>Pending</span>
+
+                <h2 id="pendingLeads">
+                    0
+                </h2>
+
+                <small>
+                    Active Leads
+                </small>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span>Revenue</span>
+
+                <h2 id="revenue">
+                    ₹0
+                </h2>
+
+                <small>
+                    Quarterly Forecast
+                </small>
+
+            </div>
+
+        </section>
+
+        <section class="charts-section">
+
+            <div class="chart-card">
+
+                <div class="chart-title">
+
+                    <h3>
+                        Revenue Analytics
+                    </h3>
+
+                </div>
+
+                <canvas id="growthChart"></canvas>
+
+            </div>
+
+            <div class="chart-card">
+
+                <div class="chart-title">
+
+                    <h3>
+                        Lead Status
+                    </h3>
+
+                </div>
+
+                <canvas id="statusChart"></canvas>
+
+            </div>
+
+        </section>
+
+        <section class="bottom-section">
+
+            <div class="table-card">
+
+                <div class="table-header">
+
+                    <h3>
+                        Recent Leads
+                    </h3>
+
+                    <button>
+                        Add Lead
+                    </button>
+
+                </div>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Revenue</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="leadTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="activity-card">
+
+                <h3>
+                    AI Insights
+                </h3>
+
+                <div class="insight-box">
+
+                    <p>
+                        Revenue expected
+                        to grow by 18%.
+                    </p>
+
+                </div>
+
+                <div class="insight-box">
+
+                    <p>
+                        Customer retention
+                        improved significantly.
+                    </p>
+
+                </div>
+
+                <div class="insight-box">
+
+                    <p>
+                        Pending leads need
+                        immediate follow-up.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+
+                <h2>Vortex CRM</h2>
+
+                <p>Analytics Center</p>
+
+            </div>
+
+            <div class="menu">
+
+                <a href="index.html">
+                    Dashboard
+                </a>
+
+                <a href="leads.html">
+                    Leads
+                </a>
+
+                <a href="analytics.html"
+                   class="active">
+                    Analytics
+                </a>
+
+                <a href="reports.html">
+                    Reports
+                </a>
+
+                <a href="settings.html">
+                    Settings
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Business Analytics Dashboard
+                </h1>
+
+                <p>
+                    Monitor revenue growth,
+                    lead performance and AI insights.
+                </p>
+
+            </div>
+
+        </header>
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <span>Monthly Revenue</span>
+
+                <h2>₹8.4L</h2>
+
+                <small>+18% this month</small>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span>Conversion Rate</span>
+
+                <h2>74%</h2>
+
+                <small>High engagement</small>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span>Lead Growth</span>
+
+                <h2>+36%</h2>
+
+                <small>Pipeline increase</small>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span>Retention</span>
+
+                <h2>91%</h2>
+
+                <small>Strong customer loyalty</small>
+
+            </div>
+
+        </section>
+
+        <section class="charts-section">
+
+            <div class="chart-card">
+
+                <div class="chart-title">
+
+                    <h3>
+                        Revenue Growth
+                    </h3>
+
+                </div>
+
+                <canvas id="revenueChart"></canvas>
+
+            </div>
+
+            <div class="chart-card">
+
+                <div class="chart-title">
+
+                    <h3>
+                        Lead Conversion
+                    </h3>
+
+                </div>
+
+                <canvas id="conversionChart"></canvas>
+
+            </div>
+
+        </section>
+
+        <section class="bottom-section">
+
+            <div class="table-card">
+
+                <div class="table-header">
+
+                    <h3>
+                        Top Sales Agents
+                    </h3>
+
+                </div>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Agent</th>
+                            <th>Leads</th>
+                            <th>Revenue</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Vasavi</td>
+                            <td>42</td>
+                            <td>₹4,50,000</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Rahul</td>
+                            <td>36</td>
+                            <td>₹3,20,000</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Priya</td>
+                            <td>31</td>
+                            <td>₹2,80,000</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="activity-card">
+
+                <h3>
+                    AI Sales Insights
+                </h3>
+
+                <div class="insight-box">
+
+                    <p>
+                        Revenue expected to increase
+                        by 18% next month.
+                    </p>
+
+                </div>
+
+                <div class="insight-box">
+
+                    <p>
+                        Converted leads increased
+                        by 12% this quarter.
+                    </p>
+
+                </div>
+
+                <div class="insight-box">
+
+                    <p>
+                        Pending leads require
+                        immediate follow-up.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="analytics.js"></script>
+
+</body>
+
+</html>
